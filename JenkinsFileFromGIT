@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello_git') {
+            steps {
+                echo 'Hello World_git'
+            }
+        }
+        stage('Build_git') {
+            steps {
+                echo 'Building_git.'
+            }
+        }
+        stage('Deploy_git') {
+            steps {
+                echo 'Deploying_git.'
+            }
+        }
+        stage('Test_git') {
+            steps {
+                echo 'Testing_git'
+            }
+        }
+        stage('Release_git') {
+            steps {
+                echo 'Releasing_git.'
+            }
+        }
+    }
+}
